@@ -1,11 +1,61 @@
-*{
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
     margin: 0;
     padding: 0;
 }
 
-nav{
+nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    height: 8vh;
+    border: 1px solid black;
+    font-size: 23px;
+    position: sticky;
+}
+body{
+      font-family: "Inter", sans-serif;
+}
+.nav-btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 17px;
 
+}
+
+.btn-1 button {
+    border: none;
+    background: inherit;
+    cursor: pointer;
+    padding: 0 10px;
+    font-size: 16px;
+    width: 135px;
+    height: 35px;
+    border-radius: 9px;
+      font-family: "Inter", sans-serif;
+}
+
+.btn-2 button {
+    border: none;
+    background: inherit;
+    cursor: pointer;
+    padding: 0px 10px;
+      font-family: "Inter", sans-serif;
+    font-size: 16px;
+    height: 35px;
+    background: linear-gradient(to right, rgba(66, 66, 220, 0.38), rgba(91, 89, 181, 0.482), rgb(241, 60, 60));
+    border-radius: 9px;
+    width: 145px;
+}
+
+.webname {
+    cursor: text;
+      font-family: "Inter", sans-serif;
+}
+
+.btn-1 button:hover{
+    background-color: rgba(128, 128, 128, 0.109);
 }
