@@ -15,9 +15,12 @@ nav {
     font-size: 23px;
     background-color: white;
     position: sticky;
+    
 }
 .container{
     background-color: transparent;
+   
+    
 }
 body{
       font-family: "Inter", sans-serif;

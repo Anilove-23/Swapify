@@ -6,12 +6,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Swapify</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="login.css">
 </head>
 
 <body>
     <div class="container">
 
+<div class="opacity-box" id="login-popup" style="display: none;">
+            <div class="login" >
+                <div class="login-header">
+                    <h1>Create Your Profile</h1>
+                    <p>Tell us about yourself and what skills you'd like to share and learn!</p>
+                </div>
 
+                <div class="form-group">
+                    <label for="name" class="required-field">Your Name</label>
+                    <input type="text" id="name" placeholder="Enter your full name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="login-textarea">Bio</label>
+                    <textarea id="login-textarea" placeholder="Tell others about yourself, your experience and what motivates you to learn..."></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="skills-teach" class="required-field">Skills You Can Teach</label>
+                    <input type="text" id="skills-teach" placeholder="e.g. JavaScript, Graphic Design, Public Speaking" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="skills-learn" class="required-field">Skills You Want To Learn</label>
+                    <input type="text" id="skills-learn" placeholder="e.g. Photography, Data Analysis, Spanish" required>
+                </div>
+
+                <div class="login-btn">
+                    <button class="cancel-btn">Cancel</button>
+                    <button class="create-btn">Create Profile</button>
+                </div>
+            </div>
+        </div>
 
 
         <header>
