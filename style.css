@@ -138,3 +138,12 @@ body{
     z-index: 999;
 }
 
+.user-acc{
+    border: 1px solid black;
+    border-radius: 50px;
+    padding: 5px 9px;
+    position: relative;
+    left: 150px;
+    cursor: pointer;
+    background-color: rgba(128, 128, 128, 0.492);
+}

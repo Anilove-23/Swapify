@@ -1,8 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
 *{
     margin: 0;
     padding: 0;
 }
-
+body{
+     font-family: "Inter", sans-serif;
+}
 .container{
     background-color: rgba(245, 245, 245, 1);
     height: 100vh;
@@ -55,9 +59,11 @@ nav{
     flex-direction: column;
     justify-content: center;
     /* align-items: center; */
-    gap: 10px;
+    gap: 19px;
     border: 1px solid black;
     width: 85vw;
+    border-radius: 7px;
+    background-color: white;
     margin: auto;
     margin-top: 30px;
     padding: 17px;
@@ -74,9 +80,10 @@ nav{
     /* width: 85px; */
     padding: 3px 10px;
     border-radius: 5px;
+    background-color: rgba(128, 128, 128, 0.294) ;
 }
 .categories span:hover{
-    background-color:rgba(128, 128, 128, 0.294) ;
+    background-color:rgba(128, 128, 128, 0.514) ;
 }
 
 .search-skill> :first-child{
@@ -85,12 +92,99 @@ nav{
 
 .find input{
     border-radius: 4px;
-    padding: 5px 0;
+    padding: 9px 0;
     width: 80vw;
+}
+
+.find input:hover{
+    box-shadow: 3px 3px 15px rgba(72, 168, 236, 0.794);
 }
 
 .search-skill:hover{
     box-shadow: 8px 7px 12px #6c75c8;
     transform: scale(1.01);
     transform: translate(3px,3px);
+}
+
+.card-container{
+    width: 85vw;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.card{
+    border: none;
+    border-radius: 13px;
+    background-color: white;
+    width: 24vw;
+    height: 48vh;
+}
+
+.img img{
+    border-radius: 50px;
+    border: 1px solid black;
+    width: 45px;
+}
+
+.img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 25%;
+}
+
+.about-user{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.offers span,.wants span{
+    border: 1px solid rgb(90, 90, 226);
+    border-radius: 25px;
+    
+    padding: 1px 35px;
+}
+
+.skill-card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 280px;
+  margin: 15px;
+  font-family: 'Inter', sans-serif;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.username {
+  font-size: 20px;
+  margin: 0;
+  font-weight: 600;
+  color: #333;
+  text-align: center;
+}
+
+.skills {
+  font-size: 16px;
+  color: #444;
+  line-height: 1.5;
+}
+
+.tag {
+  font-weight: bold;
+  margin-right: 8px;
+  padding: 2px 6px;
+  border-radius: 6px;
+}
+
+.tag-have {
+  background-color: rgba(0, 128, 0, 0.1);
+  color: green;
+}
+
+.tag-want {
+  background-color: rgba(255, 165, 0, 0.1);
+  color: orange;
 }

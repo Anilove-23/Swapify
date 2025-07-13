@@ -1,0 +1,94 @@
+/* dashboard.css */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f5f5f7;
+  color: #333;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  padding: 2.5rem;
+  width: 90%;
+  max-width: 600px;
+  margin: 2rem auto;
+}
+
+h1 {
+  color: #2d3436;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  font-weight: 600;
+}
+
+h2 {
+  color: #00b894;
+  font-size: 1.5rem;
+  margin: 1.2rem 0 0.5rem;
+  font-weight: 500;
+}
+
+p {
+  margin: 0.8rem 0;
+  color: #636e72;
+}
+
+strong {
+  color: #2d3436;
+  font-weight: 600;
+}
+
+#dash-bio {
+  font-style: italic;
+  padding: 0.8rem;
+  background-color: #f8f9fa;
+  border-radius: 6px;
+  margin: 1rem 0;
+}
+
+#dash-teach, #dash-learn {
+  display: inline-block;
+  padding: 0.3rem 0.6rem;
+  background-color: #e3f2fd;
+  border-radius: 4px;
+  color: #1976d2;
+}
+
+a {
+  display: inline-block;
+  margin-top: 1.5rem;
+  color: #00b894;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+a:hover {
+  color: #008c6d;
+  text-decoration: underline;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .container {
+    padding: 1.5rem;
+    width: 95%;
+  }
+  
+  h1 {
+    font-size: 1.8rem;
+  }
+  
+  h2 {
+    font-size: 1.3rem;
+  }
+}
