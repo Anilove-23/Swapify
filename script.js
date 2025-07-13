@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const popup = document.getElementById("login-popup");
   const openBtn = document.querySelector(".btn-2 button");
   const cancelBtn = document.querySelector(".cancel-btn");
-
+  const browseskill = document.getElementById("btn-1");
   openBtn.addEventListener("click", () => {
     popup.style.display = "flex";
     document.body.style.overflow = "hidden"; // Prevent background scroll
@@ -20,4 +20,9 @@ document.addEventListener("DOMContentLoaded", function () {
       document.body.style.overflow = "";
     }
   });
+  browseskill.addEventListener("click",()=>{
+window.location.href = "browse_skills.html"
 });
+});
+
+

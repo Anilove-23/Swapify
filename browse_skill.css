@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    background-color: rgba(245, 245, 245, 1);
+    height: 100vh;
+    z-index: 1;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    outline: none;
+    border: 1px solid black;
+    background-color: white;
+    height: 9vh;
+}
+
+.nav-1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 57px;
+    margin-left: 80px;
+    
+}
+
+.member-found{
+    margin-right: 200px;
+}
+
+.back-btn button{
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    padding: 7px 12px;
+    font-size: 16px;
+    
+}
+
+.back-btn button:hover{
+    background-color: rgba(128, 128, 128, 0.294);
+    /* font-weight: bolder; */
+}
+
+.Browse-Skills{
+    font-size: 25px;
+    font-weight: bolder;
+}
+
+.search-skill{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    gap: 10px;
+    border: 1px solid black;
+    width: 85vw;
+    margin: auto;
+    margin-top: 30px;
+    padding: 17px;
+    transition: all 0.3s ease-in-out;
+}
+
+.categories{
+    display: flex;
+    gap: 13px;
+    
+}
+
+.categories span{
+    /* width: 85px; */
+    padding: 3px 10px;
+    border-radius: 5px;
+}
+.categories span:hover{
+    background-color:rgba(128, 128, 128, 0.294) ;
+}
+
+.search-skill> :first-child{
+    font-size: 23px;
+}
+
+.find input{
+    border-radius: 4px;
+    padding: 5px 0;
+    width: 80vw;
+}
+
+.search-skill:hover{
+    box-shadow: 8px 7px 12px #6c75c8;
+    transform: scale(1.01);
+    transform: translate(3px,3px);
+}
