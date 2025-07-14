@@ -1,25 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Your Dashboard</title>
-  <link rel="stylesheet" href="dashboard.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css">
 </head>
+
 <body>
+    <div class="container">
+        <nav>
+            <div class="left-nav">
+                <div class="prof-pic"><img src="user.svg" alt=""></div>
+                <div class="welcome">
+                    <span id="welcome"></span>
+                    <span>Manage your skill exchanges and discover new opportunities</span>
 
-  <div class="container">
-    <h1>Your Swapify Profile</h1>
+                </div>
+            </div>
 
-    <h2 id="dash-name"></h2>
-    <p id="dash-bio"></p>
+            <div class="buttons">
+                <button id="home-redirec"><a href="index.html">Home</a></button>
+                <button id="Notifications">Notifications</button>
+                <button id="Settings">Settings</button>
+            </div>
+        </nav>
 
-    <p><strong>Can Teach:</strong> <span id="dash-teach"></span></p>
-    <p><strong>Wants to Learn:</strong> <span id="dash-learn"></span></p>
+        <div class="stat-container">
+            <div class="stat-cards">
+                <p>Total Exchanges</p>
+                <span></span>
+                <span></span>
+            </div>
 
-    
-  </div>
+            <div class="stat-cards">
+                <p>Your Rating</p>
+                <span></span>
+                <span></span>
+            </div>
 
-  <script src="dashboard.js"></script>
+            <div class="stat-cards">
+                <p>Active Exchanges</p>
+                <span></span>
+                <span></span>
+            </div>
+
+            <div class="stat-cards">
+                <p>New Matches</p>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+
+        <div class="options">
+            <span>Dashboard</span>
+            <span>My Exchanges</span>
+            <span>New Matches</span>
+            <span>Profile</a></span>
+        </div>
+
+        <div class="activity-and-sessions">
+            <div class="recent-activity">
+                <h1>Recent Activity</h1>
+                
+            </div>
+            <div class="upcoming-sessions">
+                <h1>Upcoming Sessions</h1>
+            </div>
+        </div>
+    </div>
+    <script src="dashboard.js"></script>
 </body>
+
 </html>
