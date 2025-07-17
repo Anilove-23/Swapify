@@ -144,17 +144,129 @@ nav {
 
 .recent-activity {
     width: 50%;
-    height: 30vh;
+    height: 36vh;
     border: 1px solid black;
-    border-radius: 7px;  
+    border-radius: 7px;
     padding: 20px;
 }
 
 .upcoming-sessions {
     width: 50%;
-    height: 30vh ;
+    height: 36vh;
     border: 1px solid black;
-    border-radius: 7px; 
+    border-radius: 7px;
     padding: 20px;
-    
+
+}
+
+.profile {
+    display: flex;
+    gap: 37px;
+    margin-top: 55px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.your-profile {
+    border: 1px solid black;
+    width: 118%;
+    height: 44vh;
+    overflow-y: auto;
+    padding: 17px;
+    padding-bottom: 5px;
+    padding-top: 8px;
+    background-color: white;
+    border-radius: 11px;
+    padding-top: 35px;
+    padding-left: 40px;
+    box-sizing: border-box;
+
+}
+
+.prof-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.your-profile h2 {
+    padding-bottom: 10px;
+}
+
+.your-profile span img {
+    border-radius: 50px;
+}
+
+.img-span {
+    border-radius: 50px;
+    background-color: #e2e2e2;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.your-stats {
+    border: 1px solid black;
+    width: 50%;
+    height: 44vh;
+    overflow-y: auto;
+    padding: 17px;
+    padding-bottom: 5px;
+    padding-top: 8px;
+    background-color: white;
+    border-radius: 11px;
+    box-sizing: border-box;
+}
+
+.user-head {
+    display: flex;
+    gap: 25px;
+
+    align-items: center;
+}
+
+.details {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    justify-content: center;
+    /* align-items: center; */
+}
+
+#user-name {
+    font-size: 1.15rem;
+}
+
+#mem-since {
+    color: rgba(0, 0, 0, 0.729);
+}
+
+.edit-profile {}
+
+.edit-profile button {
+    cursor: pointer;
+    border-radius: 7px;
+    border: none;
+    background-color: #e2e2e2;
+    padding: 6px 12px;
+
+}
+
+.my-exchanges {
+    width: 100%;
+    height: 42vh;
+    border: 1px solid black;
+    border-radius: 7px;
+    margin-top: 55px;
+}
+
+.new-matches {
+   width: 100%;
+    height: 42vh;
+    border: 1px solid black;
+    border-radius: 7px;
+    margin-top: 55px;
 }

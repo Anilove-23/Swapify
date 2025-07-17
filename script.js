@@ -37,7 +37,7 @@ document.getElementById("create-btn").addEventListener("click", () => {
   const bio = document.getElementById("login-textarea").value.trim();
   const teach = document.getElementById("skills-teach").value.trim().split(",");
   const learn = document.getElementById("skills-learn").value.trim().split(",");
-
+ 
   if (!name || !teach.length || !learn.length) {
     alert("Please fill in all required fields.");
     return;
@@ -51,7 +51,14 @@ document.getElementById("create-btn").addEventListener("click", () => {
   };
 
   localStorage.setItem("userProfile", JSON.stringify(userProfile));
+  
+  const memsince = new Date().toISOString();
+    localStorage.setItem("memsince", memsince);
 
+    // document.getElementById("create-btn").addEventListener("click", () =>{
+    //   document.getElementById("login-btn").style.display = "none";
+    // });
+    document.getElementById("btn-2").style.display = "none";
   // Redirect to dashboard
   window.location.href = "dashboard.html";
 });
