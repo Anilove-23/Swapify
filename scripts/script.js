@@ -4,65 +4,87 @@ document.addEventListener("DOMContentLoaded", function () {
   const cancelBtn = document.querySelector(".cancel-btn");
   const browseskill = document.getElementById("btn-1");
   const userprofile = document.getElementById("user-acc");
+  const joinBtn = document.getElementById("btn-2");
 
-  openBtn.addEventListener("click", () => {
-    popup.style.display = "flex";
-    document.body.style.overflow = "hidden"; // Prevent background scroll
-  });
+  // ✅ Check if user is already logged in
+  const user = localStorage.getItem("userProfile");
+  if (user) {
+    if (joinBtn) joinBtn.style.display = "none";
+    if (userprofile) userprofile.style.display = "block";
+  } else {
+    if (joinBtn) joinBtn.style.display = "block";
+    if (userprofile) userprofile.style.display = "none";
+  }
 
-  cancelBtn.addEventListener("click", () => {
-    popup.style.display = "none";
-    document.body.style.overflow = ""; // Re-enable scroll
-  });
+  // 💬 Open popup
+  if (openBtn) {
+    openBtn.addEventListener("click", () => {
+      popup.style.display = "flex";
+      document.body.style.overflow = "hidden"; // Prevent background scroll
+    });
+  }
 
-  // Optional: close when clicking outside the modal
+  // 💬 Close popup (Cancel button)
+  if (cancelBtn) {
+    cancelBtn.addEventListener("click", () => {
+      popup.style.display = "none";
+      document.body.style.overflow = ""; // Re-enable scroll
+    });
+  }
+
+  // 💬 Close popup when clicking outside
   popup.addEventListener("click", (e) => {
     if (e.target === popup) {
       popup.style.display = "none";
       document.body.style.overflow = "";
     }
   });
-  browseskill.addEventListener("click",()=>{
-window.location.href = "/pages/browse_skills.html"
 
-
-});
-
-userprofile.addEventListener("click",()=>{
-  window.location.href = "/pages/dashboard.html"
-})
-
-document.getElementById("create-btn").addEventListener("click", () => {
-  const name = document.getElementById("name").value.trim();
-  const bio = document.getElementById("login-textarea").value.trim();
-  const teach = document.getElementById("skills-teach").value.trim().split(",");
-  const learn = document.getElementById("skills-learn").value.trim().split(",");
- 
-  if (!name || !teach.length || !learn.length) {
-    alert("Please fill in all required fields.");
-    return;
+  // 💬 Navigate to Browse Skills
+  if (browseskill) {
+    browseskill.addEventListener("click", () => {
+      window.location.href = "/pages/browse_skills.html";
+    });
   }
 
-  const userProfile = {
-    name,
-    bio,
-    teach,
-    learn
-  };
+  // 💬 Navigate to Dashboard
+  if (userprofile) {
+    userprofile.addEventListener("click", () => {
+      window.location.href = "/pages/dashboard.html";
+    });
+  }
 
-  localStorage.setItem("userProfile", JSON.stringify(userProfile));
-  
-  const memsince = new Date().toISOString();
-    localStorage.setItem("memsince", memsince);
+  // ✅ Create Profile logic
+  const createBtn = document.getElementById("create-btn");
+  if (createBtn) {
+    createBtn.addEventListener("click", () => {
+      const name = document.getElementById("name").value.trim();
+      const bio = document.getElementById("login-textarea").value.trim();
+      const teach = document.getElementById("skills-teach").value.trim().split(",");
+      const learn = document.getElementById("skills-learn").value.trim().split(",");
 
-    // document.getElementById("create-btn").addEventListener("click", () =>{
-    //   document.getElementById("login-btn").style.display = "none";
-    // });
-    document.getElementById("btn-2").style.display = "none";
-  // Redirect to dashboard
-  window.location.href = "/pages/dashboard.html";
+      if (!name || !teach.length || !learn.length) {
+        alert("Please fill in all required fields.");
+        return;
+      }
+
+      const userProfile = {
+        name,
+        bio,
+        teach,
+        learn,
+      };
+
+      localStorage.setItem("userProfile", JSON.stringify(userProfile));
+      localStorage.setItem("memsince", new Date().toISOString());
+
+      if (joinBtn) joinBtn.style.display = "none";
+      if (userprofile) userprofile.style.display = "block";
+
+      // Redirect to dashboard
+      setTimeout(() => {
+        window.location.href = "/pages/dashboard.html";
+      }, 200);
+    });
+  }
 });
-
-});
-
-
