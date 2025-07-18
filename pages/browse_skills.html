@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Browse Skills</title>
+    <link rel="stylesheet" href="/styles/browse_skill.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <nav>
+                <div class="nav-1">
+                    <span class="back-btn"><button id="back-btnn">Back</button></span>
+                    <span class="Browse-Skills">Browse Skills</span>
+                </div>
+                <span class="member-found">members found</span>
+            </nav>
+        </header>
+
+        <div class="search-skill">
+
+            <span><b>Find Your Perfect Skill Match</b></span>
+            <div class="find">
+                <input type="text" placeholder="Search by names, skills offered, skills wanted...">
+            </div>
+            <div class="categories">
+                <span>Programming</span>
+                <span>Design</span>
+                <span>Language</span>
+                <span>Dance</span>
+                <span>Music</span>
+                <span>Cooking</span>
+                <span>Photography</span>
+            </div>
+
+        </div>
+
+
+        <!-- Person-card -->
+        <div class="card-container" id="card-holder">
+            <div class="card">
+                <div class="img"><img src="/assets/svg/user.svg" alt=""> </div>
+                <div class="about-user">
+                    <span>Rating</span><span>Swaps</span>
+                </div>
+
+                <div class="skill-card">
+                    <h3 class="username">Anilove</h3>
+
+                    <div class="skills">
+                        <p><span class="tag tag-have">✅ Has:</span> HTML, CSS, Figma</p>
+                        <p><span class="tag tag-want">🔄 Wants:</span> React, UI Design</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <script src="/scripts/browse_skill.js"></script>
+</body>
+
+</html>

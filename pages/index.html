@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swapify</title>
+    <link rel="stylesheet" href="/styles/style.css">
+    <link rel="stylesheet" href="/styles/login.css">
+</head>
+
+<body>
+    <div class="container">
+
+<div class="opacity-box" id="login-popup" style="display: none;">
+            <div class="login" >
+                <div class="login-header">
+                    <h1>Create Your Profile</h1>
+                    <p>Tell us about yourself and what skills you'd like to share and learn!</p>
+                </div>
+
+                <div class="form-group">
+                    <label for="name" class="required-field">Your Name</label>
+                    <input type="text" id="name" placeholder="Enter your full name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="login-textarea">Bio</label>
+                    <textarea id="login-textarea" placeholder="Tell others about yourself, your experience and what motivates you to learn..."></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="skills-teach" class="required-field">Skills You Can Teach</label>
+                    <input type="text" id="skills-teach" placeholder="e.g. JavaScript, Graphic Design, Public Speaking" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="skills-learn" class="required-field">Skills You Want To Learn</label>
+                    <input type="text" id="skills-learn" placeholder="e.g. Photography, Data Analysis, Spanish" required>
+                </div>
+
+                <div class="login-btn" >
+                    <button class="cancel-btn">Cancel</button>
+                    <button class="create-btn" id="create-btn">Create Profile</button>
+                </div>
+            </div>
+        </div>
+
+        <header>
+            <nav>
+                <div class="webname">Swapify</div>
+                <div class="nav-btn">
+                    <div class="btn-1"><button>Home</button></div>
+                    <div class="btn-1"><button id="btn-1">Browse Skills</button></div>
+                    <div class="btn-2" id="btn-2"><button>Join Swapify</button></div>
+                    <div class="user-acc" id="user-acc"><img src="/assets/svg/user.svg" alt=""></div>
+                </div>
+            </nav>
+        </header>
+
+        <div class="intro">
+            <span>
+                <strong> Trade Skills, Build Community </strong>
+            </span>
+            <span class="des">
+                Connect with people worldwide to exchange skills. Teach what you know, learn what you want. Zero cost,
+                infinite possibilities.
+            </span>
+        </div>
+
+
+
+        <!-- card -->
+        <div class="steps">
+            <span class="step-des"><strong>How Swapify Works</strong></span>
+            <div class="card-holder">
+                <div class="step-card">
+                    <img src="/assets/svg/user.svg" alt="user">
+                    <span><B>Create Your Profile</B></span>
+                    <span class="card-des">List the skills you can teach and what you want to learn. Build your
+                        reputation through successful exchanges.</span>
+                </div>
+
+                <div class="step-card">
+                    <img src="/assets/svg/search.svg" alt="Search">
+                    <span><b>Find Your Match</b></span>
+                    <span>Browse skills, filter by category, and find people who offer what you need and want what you
+                        teach.</span>
+                </div>
+
+                <div class="step-card">
+                    <img src="/assets/svg/learn.svg" alt="learn">
+                    <span><B>Start Learning</B></span>
+                    <span>Connect directly, coordinate sessions, and start your skill exchange journey. Rate each other
+                        after!</span>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+<script src="/scripts/script.js"></script>
+
+</html>

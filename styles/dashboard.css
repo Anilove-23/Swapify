@@ -1,0 +1,272 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #f5f7fb;
+}
+
+.container {
+    padding: 0 45px;
+    background-color: #f5f7fb;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 13vh;
+    background-color: white;
+    margin-top: 20px;
+    padding: 3px 10px;
+    border-radius: 7px;
+}
+
+.left-nav {
+    display: flex;
+    gap: 17px;
+    /* padding-left: 45px; */
+}
+
+.prof-pic {
+    border: 1px solid black;
+    border-radius: 100px;
+    padding: 2px 12px;
+    background-color: rgba(128, 128, 128, 0.226);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#home-redirec a {
+    text-decoration-line: none;
+}
+
+.welcome {
+    display: flex;
+    flex-direction: column;
+}
+
+.buttons {
+    /* margin-right: 25px; */
+    display: flex;
+    gap: 10px;
+}
+
+.buttons button {
+    border: none;
+    border-radius: 7px;
+    padding: 8px 12px;
+    width: 155px;
+    background-color: rgba(0, 68, 255, 0.571);
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.buttons button:hover {
+    background-color: rgba(128, 128, 128, 0.436);
+}
+
+#welcome {
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+.welcome :last-child {
+    font-size: 18px;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.759);
+}
+
+
+.stat-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 13px;
+    margin-top: 30px;
+}
+
+.stat-cards {
+    border: 1px solid black;
+    height: 13vh;
+    width: 20vw;
+    border-radius: 9px;
+    padding: 25px 25px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    line-height: 3px;
+    transition: all 0.47s ease-in-out;
+}
+
+.stat-cards:hover {
+    box-shadow: 2px 2px 17px #7575df;
+    transform: scale(1.0569);
+    transform: translateY(7px);
+}
+
+.options {
+    display: flex;
+    height: 23px;
+    padding: 6px 0;
+    border-radius: 5px;
+    width: 100%;
+    border: 1px solid black;
+    position: relative;
+    align-items: center;
+    top: 37px;
+    background-color: rgba(104, 210, 210, 0.348);
+}
+
+.options span {
+    width: 25%;
+    height: 23px;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.options span:hover {
+    background-color: rgba(128, 128, 128, 0.246);
+    color: blue;
+}
+
+.activity-and-sessions {
+    display: flex;
+    gap: 10px;
+    margin-top: 55px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.recent-activity {
+    width: 50%;
+    height: 36vh;
+    border: 1px solid black;
+    border-radius: 7px;
+    padding: 20px;
+}
+
+.upcoming-sessions {
+    width: 50%;
+    height: 36vh;
+    border: 1px solid black;
+    border-radius: 7px;
+    padding: 20px;
+
+}
+
+.profile {
+    display: flex;
+    gap: 37px;
+    margin-top: 55px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.your-profile {
+    border: 1px solid black;
+    width: 118%;
+    height: 44vh;
+    overflow-y: auto;
+    padding: 17px;
+    padding-bottom: 5px;
+    padding-top: 8px;
+    background-color: white;
+    border-radius: 11px;
+    padding-top: 35px;
+    padding-left: 40px;
+    box-sizing: border-box;
+
+}
+
+.prof-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.your-profile h2 {
+    padding-bottom: 10px;
+}
+
+.your-profile span img {
+    border-radius: 50px;
+}
+
+.img-span {
+    border-radius: 50px;
+    background-color: #e2e2e2;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.your-stats {
+    border: 1px solid black;
+    width: 50%;
+    height: 44vh;
+    overflow-y: auto;
+    padding: 17px;
+    padding-bottom: 5px;
+    padding-top: 8px;
+    background-color: white;
+    border-radius: 11px;
+    box-sizing: border-box;
+}
+
+.user-head {
+    display: flex;
+    gap: 25px;
+
+    align-items: center;
+}
+
+.details {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    justify-content: center;
+    /* align-items: center; */
+}
+
+#user-name {
+    font-size: 1.15rem;
+}
+
+#mem-since {
+    color: rgba(0, 0, 0, 0.729);
+}
+
+.edit-profile {}
+
+.edit-profile button {
+    cursor: pointer;
+    border-radius: 7px;
+    border: none;
+    background-color: #e2e2e2;
+    padding: 6px 12px;
+
+}
+
+.my-exchanges {
+    width: 100%;
+    height: 42vh;
+    border: 1px solid black;
+    border-radius: 7px;
+    margin-top: 55px;
+}
+
+.new-matches {
+   width: 100%;
+    height: 42vh;
+    border: 1px solid black;
+    border-radius: 7px;
+    margin-top: 55px;
+}

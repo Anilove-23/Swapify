@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="/styles/dashboard.css">
+</head>
+
+<body>
+    <div class="container">
+        <nav>
+            <div class="left-nav">
+                <div class="prof-pic" id="main-img"><img  src="/assets/svg/user.svg" alt=""></div>
+                <div class="welcome">
+                    <span id="welcome"></span>
+                    <span>Manage your skill exchanges and discover new opportunities</span>
+
+                </div>
+            </div>
+
+            <div class="buttons">
+                <button id="home-redirec"><a href="index.html">Home</a></button>
+                <button id="Notifications">Notifications</button>
+                <button id="Settings">Settings</button>
+            </div>
+        </nav>
+
+        <div class="stat-container">
+            <div class="stat-cards">
+                <p>Total Exchanges</p>
+                <span></span>
+                <span></span>
+            </div>
+
+            <div class="stat-cards">
+                <p>Your Rating</p>
+                <span></span>
+                <span></span>
+            </div>
+
+            <div class="stat-cards">
+                <p>Active Exchanges</p>
+                <span></span>
+                <span></span>
+            </div>
+
+            <div class="stat-cards">
+                <p>New Matches</p>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+
+        <div class="options">
+            <span id="dashboard">Dashboard</span>
+            <span id="exchanges">My Exchanges</span>
+            <span id="matches">New Matches</span>
+            <span id="profile" >Profile</a></span>
+        </div>
+
+        <div class="activity-and-sessions" id="activity-and-sessions">
+            <div class="recent-activity">
+                <h1>Recent Activity</h1>
+
+            </div>
+            <div class="upcoming-sessions">
+                <h1>Upcoming Sessions</h1>
+            </div>
+        </div>
+
+        <div class="my-exchanges" id="my-exchanges" style="display: none;">
+
+        </div>
+
+        <div class="new-matches" id="new-matches" style="display: none;">
+
+        </div>
+        <div class="profile" id="proff" style="display: none;">
+            <div class="your-profile">
+                <div class="prof-nav">
+                    <h2 id="prof-head">Your Profile</h2>
+                    <div class="edit-profile">
+                        <button id="edit-profile">Edit Profile</button>
+                    </div>
+                </div>
+                <div class="user-head">
+                    <span class="img-span"><img src="/assets/svg/user.svg" alt=""></span>
+                    <div class="details">
+                        <span id="user-name"></span>
+                        <span id="mem-since"></span>
+                    </div>
+                </div>
+
+
+
+            </div>
+            <div class="your-stats"></div>
+        </div>
+    </div>
+    <script src="/scripts/dashboard.js"></script>
+    
+</body>
+
+</html>

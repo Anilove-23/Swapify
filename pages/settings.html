@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SkillSwap Settings</title>
+  <link rel="stylesheet" href="/styles/settings.css">
+</head>
+<body>
+  <div class="settings-container">
+    <div class="top-flex">
+    <h1>Settings</h1>
+    <button id="back">Back</button></div>
+    <!-- Profile Header -->
+    <div class="profile-header">
+      <img src="/assets/svg/user.svg" class="profile-img" alt="Profile">
+      <div>
+        <h2 id="settings-username"></h2>
+        <p>Edit your account and preferences below</p>
+      </div>
+    </div>
+
+    <!-- Tabs -->
+    <div class="tabs">
+      
+      <button class="tab" data-tab="profile">Profile</button>
+      <button class="tab" data-tab="preferences">Preferences</button>
+      <button class="tab" data-tab="notifications">Notifications</button>
+    </div>
+
+    <!-- Tab Content -->
+    <div class="tab-content">
+
+     
+
+      <!-- Profile -->
+      <div class="tab-panel hidden" id="profile">
+        <label>Display Name: <input type="text" placeholder="Your Name" /></label>
+        <label>Bio: <textarea placeholder="Write something about yourself..."></textarea></label>
+        <label>Skills to Teach: <input type="text" placeholder="e.g. Python, Guitar" /></label>
+        <label>Skills to Learn: <input type="text" placeholder="e.g. French, Photoshop" /></label>
+        <button class="save-btn">Update Profile</button>
+      </div>
+
+      <!-- Preferences -->
+      <div class="tab-panel hidden" id="preferences">
+        <label>
+          Theme:
+          <select>
+            <option>Light</option>
+            <option>Dark</option>
+          </select>
+        </label>
+        <label>
+          Language:
+          <select>
+            <option>English</option>
+            <option>Hindi</option>
+            <option>Other</option>
+          </select>
+        </label>
+        <button class="save-btn">Save Preferences</button>
+      </div>
+
+      <!-- Notifications -->
+      <div class="tab-panel hidden" id="notifications">
+        <label><input type="checkbox" checked> Email Notifications</label>
+        <label><input type="checkbox"> SMS Alerts</label>
+        <label><input type="checkbox" checked> Session Reminders</label>
+        <button class="save-btn">Save Notification Settings</button>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="/scripts/settings.js"></script>
+</body>
+</html>
