@@ -23,13 +23,13 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
   browseskill.addEventListener("click",()=>{
-window.location.href = "browse_skills.html"
+window.location.href = "/pages/browse_skills.html"
 
 
 });
 
 userprofile.addEventListener("click",()=>{
-  window.location.href = "dashboard.html"
+  window.location.href = "/pages/dashboard.html"
 })
 
 document.getElementById("create-btn").addEventListener("click", () => {
@@ -60,7 +60,7 @@ document.getElementById("create-btn").addEventListener("click", () => {
     // });
     document.getElementById("btn-2").style.display = "none";
   // Redirect to dashboard
-  window.location.href = "dashboard.html";
+  window.location.href = "/pages/dashboard.html";
 });
 
 });

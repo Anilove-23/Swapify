@@ -91,5 +91,14 @@ document.getElementById("exchanges").addEventListener("click",()=>{
   if (beforeprofile.firstElementChild.getAttribute("src") == "user.svg") {
     beforeprofile.style.padding = "13px";
   }
+
+ 
+  const editprof = document.getElementById("edit-profile");
+  editprof.addEventListener("click",()=>{
+    window.location.href = "/pages/settings.html";
+  });
+
+
+  
 };
 
